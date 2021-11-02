@@ -9,26 +9,23 @@ const NewExpense = (props) => {
       id: Math.random().toString(),
     };
     props.onAddExpense(expenseData);
+    setButtonClick(false);
   };
 
   const [buttonClick, setButtonClick] = useState(false);
 
   const renderForm = () => {
     setButtonClick(true);
-    console.log(buttonClick);
   }
 
-  const expenseButton = <button onClick={renderForm}>Add New Expense</button>
-
-  if (buttonClick === true) {
-    return <div classname="new-expense">
-      <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
-      </div>
+  const cancelClick = () => {
+    setButtonClick(false);
   }
 
   return (
     <div className="new-expense">
-      {expenseButton}
+      {!buttonClick && <button onClick={renderForm}>Add New Expense</button>}
+      {buttonClick && <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} onCancel={cancelClick} />}
     </div>
   );
 };
