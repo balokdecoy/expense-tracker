@@ -6,13 +6,13 @@
 
   - [Description](#description)
 
-  - [Installation](#installation)
+  - [Deployed](#deployed)
+
+  - [Screenshots](#screenshots)
+
+  - [Technologies](#technologies)
 
   - [Usage](#usage)
-
-  - [Contributing](#contributing)
-
-  - [Tests](#tests)
 
   - [Questions](#questions)
 
@@ -22,25 +22,28 @@
 
   An expense tracker built in React. Assignment part of the udemy course React - The Complete Guide by Maximilian Schwarzmuller. 
 
-  ## Installation
+  ## Deployed
 
-  ```bash
-  git clone
-  ```
+  https://balokdecoy.github.io/expense-tracker/ 
+
+  ## Screenshots
+
+  ![screenshots](./public/images/screenshots/homepage.png)
+  ![screenshots](./public/images/screenshots/expense.png)
+
+  ## Technologies
+
+  - React
+  - JavaScript
+  - JSX
+  - Node.js
+  - HTML5
+  - CSS3
+
   ## Usage
 
   App accepts expense inputs from the user. Click the Add Expense button to begin. Complete the form and click Add Expense. Expense will be added to the output. Use the filter dropdown to see expenses from different years.
 
-  ## Contributing
-
-  This is a free open source project. 
-
-  ## Tests
-
-  ```bash
-  
-
-  ```
   ## Questions
 
   Visit my Github profile at http://www.github.com/balokdecoy.
@@ -49,4 +52,3 @@
 
   ## Licenses
  Licensed under [GPL v3](https://www.gnu.org/licenses/gpl-3.0)
-
